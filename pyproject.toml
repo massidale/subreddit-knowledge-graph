@@ -49,6 +49,9 @@ ml = [
     "langchain-anthropic==0.1.23",
 ]
 
+[project.scripts]
+ingest = "pipeline.ingestion.cli:cli"
+
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
