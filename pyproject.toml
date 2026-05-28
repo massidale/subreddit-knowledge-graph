@@ -2,7 +2,7 @@
 name = "reddit-kg-pipeline"
 version = "0.1.0"
 description = "Subreddit-agnostic pipeline producing a Community Discourse Knowledge Graph in Neo4j"
-requires-python = ">=3.11,<3.12"
+requires-python = ">=3.11,<3.13"
 authors = [{ name = "Massimo + team" }]
 
 dependencies = [
@@ -10,7 +10,6 @@ dependencies = [
     "pyspark==3.5.1",
     "delta-spark==3.2.0",
     "kafka-python==2.0.2",
-    "confluent-kafka==2.5.0",
 
     # Reddit
     "praw==7.7.1",
