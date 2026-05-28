@@ -1,0 +1,8 @@
+# Copy to terraform.tfvars and fill in. terraform.tfvars is gitignored.
+
+aws_region         = "eu-central-1"
+project_name       = "reddit-kg"
+env                = "dev"
+bronze_bucket_name = "reddit-kg-bronze-dev-CHOOSE_UNIQUE_SUFFIX"
+silver_bucket_name = "reddit-kg-silver-dev-CHOOSE_UNIQUE_SUFFIX"
+gold_bucket_name   = "reddit-kg-gold-dev-CHOOSE_UNIQUE_SUFFIX"
