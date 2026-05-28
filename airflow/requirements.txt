@@ -1,0 +1,8 @@
+apache-airflow-providers-apache-spark==4.10.0
+apache-airflow-providers-amazon==8.27.0
+apache-airflow-providers-apache-kafka==1.5.0
+praw==7.7.1
+kafka-python==2.0.2
+pydantic==2.8.2
+pydantic-settings==2.4.0
+structlog==24.4.0
