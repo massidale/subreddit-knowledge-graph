@@ -30,3 +30,4 @@ uv run pytest
 
 - Spec: `docs/superpowers/specs/2026-05-27-reddit-kg-pipeline-design.md`
 - Plan: `docs/superpowers/plans/2026-05-27-reddit-kg-pipeline-implementation.md`
+# subreddit-knowledge-graph
