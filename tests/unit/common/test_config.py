@@ -25,5 +25,6 @@ def test_settings_loads_from_env(monkeypatch):
 
 def test_settings_missing_required_raises(monkeypatch):
     monkeypatch.delenv("REDDIT_CLIENT_ID", raising=False)
+    # Disable .env file loading so the test isn't masked by a local .env
     with pytest.raises(ValidationError):
-        Settings()
+        Settings(_env_file=None)
