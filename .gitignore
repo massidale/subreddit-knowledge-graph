@@ -1,0 +1,59 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+.uv-cache/
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+.ruff_cache/
+
+# Spark / Delta
+spark-warehouse/
+metastore_db/
+derby.log
+_delta_log/
+
+# Secrets
+.env
+.env.local
+*.pem
+*.key
+credentials.json
+
+# IDE
+.idea/
+.vscode/
+*.swp
+.DS_Store
+
+# Data
+data/
+*.parquet
+*.delta
+*.jsonl
+*.jsonl.gz
+!tests/fixtures/*.jsonl
+!tests/fixtures/*.jsonl.gz
+
+# Terraform
+infra/terraform/.terraform/
+infra/terraform/*.tfstate
+infra/terraform/*.tfstate.backup
+infra/terraform/*.tfvars
+!infra/terraform/*.tfvars.example
+
+# Airflow
+airflow/logs/
+airflow/airflow.db
+airflow/airflow.cfg
+
+# Misc
+.cache/
+*.log
