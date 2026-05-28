@@ -16,7 +16,6 @@ from unittest.mock import MagicMock
 
 import pytest
 from kafka import KafkaProducer
-from pyspark.sql import SparkSession
 from testcontainers.kafka import KafkaContainer
 
 from pipeline.ingestion.kafka_to_bronze import build_spark, run_stream
