@@ -51,6 +51,7 @@ def serialize_submission(
         "permalink": getattr(sub, "permalink", None),
         "url": getattr(sub, "url", None),
         "kind": kind,
+        "over_18": getattr(sub, "over_18", None),
         "ingest_ts": datetime.now(UTC).isoformat(),
         "ingest_source": ingest_source,
         "pipeline_version": pipeline_version,

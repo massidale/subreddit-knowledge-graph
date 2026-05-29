@@ -59,3 +59,8 @@ def test_ingestion_metadata_fields_returns_three():
     fields = ingestion_metadata_fields()
     assert len(fields) == 3
     assert all(isinstance(f.dataType, StringType) for f in fields if f.name != "ingest_ts")
+
+def test_over18_is_boolean():
+    schema = bronze_post_schema()
+    f = next(f for f in schema.fields if f.name == "over_18")
+    assert isinstance(f.dataType, BooleanType)

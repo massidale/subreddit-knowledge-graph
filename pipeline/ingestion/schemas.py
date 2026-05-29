@@ -42,6 +42,7 @@ def bronze_post_schema() -> StructType:
             StructField("permalink", StringType(), nullable=True),
             StructField("url", StringType(), nullable=True),
             StructField("kind", StringType(), nullable=False),  # 'post' | 'comment'
+            StructField("over_18", BooleanType(), nullable=True),
             *ingestion_metadata_fields(),
         ]
     )
